@@ -94,21 +94,43 @@ export default function QnaDetail({ }) {
 
         apiCall(filePath, 'get', null, null)
             .then((response) => {
-                // 파일 다운로드를 위해 Blob으로 변환
-                // Blob을 URL로 변환하여 다운로드 링크 생성
-                const url = window.URL.createObjectURL(new Blob([response.blob]));
+                // 🛠 기존 response.blob -> response.data로 수정
+                // 공통 함수(apiCall) 리턴 구조에 따라 response 자체가 데이터일 경우 'response'만 넣으세요.
+                const fileData = response.data ? response.data : response;
+                
+                const url = window.URL.createObjectURL(new Blob([fileData]));
                 const a = document.createElement('a');
 
                 a.href = url;
                 a.download = qnaData.qafile;
-                // 다운로드 링크 클릭하여 파일 다운로드 시작
+                
                 document.body.appendChild(a);
                 a.click();
-                // 다운로드 후 URL 객체 해제
+                
+                a.remove(); // 돔 clean up 추가
                 window.URL.revokeObjectURL(url);
-            }).catch((error) => {
-                console.log(" download error = " + error)
             })
+            .catch((error) => {
+                console.log("download error = " + error);
+            });
+
+        // apiCall(filePath, 'get', null, null)
+        //     .then((response) => {
+        //         // 파일 다운로드를 위해 Blob으로 변환
+        //         // Blob을 URL로 변환하여 다운로드 링크 생성
+        //         const url = window.URL.createObjectURL(new Blob([response.blob]));
+        //         const a = document.createElement('a');
+
+        //         a.href = url;
+        //         a.download = qnaData.qafile;
+        //         // 다운로드 링크 클릭하여 파일 다운로드 시작
+        //         document.body.appendChild(a);
+        //         a.click();
+        //         // 다운로드 후 URL 객체 해제
+        //         window.URL.revokeObjectURL(url);
+        //     }).catch((error) => {
+        //         console.log(" download error = " + error)
+        //     })
     }
 
     return (
