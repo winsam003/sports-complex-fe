@@ -89,8 +89,8 @@ export default function QnaDetail({ }) {
 
     // 파일 다운로드
     const downloadFile = () => {
-        console.log(qnaData.qafile)
-        let filePath = `/qna/downloadFile?fileName=${qnaData.qafile.name}`;
+
+        let filePath = `/qna/downloadFile?fileName=${qnaData.qafile}`;
 
         apiCall(filePath, 'get', null, null)
             .then((response) => {
