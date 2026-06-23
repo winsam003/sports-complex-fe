@@ -24,7 +24,7 @@ export default function XBoardControllContentDateil2() {
 
 
     const fileDownloadLink = () => {
-        let filePath = `/notice/downloadFile?fileName=${receivedInfo.notuploadfile.name}`;
+        let filePath = `/notice/downloadFile?fileName=${receivedInfo.notuploadfile}`;
 
         apiCall(filePath, 'get', null, null)
             .then((response) => {
