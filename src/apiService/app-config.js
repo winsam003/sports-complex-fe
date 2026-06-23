@@ -40,7 +40,8 @@ if (hostname === "localhost") {
   backendHost = "http://localhost:8080";
 } else {
   // backendHost = "http://43.200.90.45:8080";
-  backendHost = "http://13.124.231.193:8080";
+  // backendHost = "http://13.124.231.193:8080";
+  backendHost = "https://sports-complex-be.onrender.com";
 }
 
 export const API_BASE_URL = `${backendHost}`;
