@@ -1,0 +1,7 @@
+.XBoardControllInsert_div {
+    display: flex;
+}
+
+.XBoardControllInsert_contents {
+    flex-grow: 1;
+}

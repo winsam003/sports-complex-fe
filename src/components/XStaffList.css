@@ -1,0 +1,60 @@
+/* 직원 검색 */
+.XStaffList_searchTitle {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* 직원 정보 검색 박스 */
+.XStaffList_SearchBox {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    border-top: 3px solid #9fdef5;
+    background-color: #ceeff250;
+}
+
+/* 부서, 직급 title */
+.XStaffList_SearchBox span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 부서, 직급 select */
+.XStaffList_SearchBox select {
+    margin-right: 50px;
+    height: 35px;
+}
+
+.XStaffList_SearchBox_input {
+    grid-column: 2/5;
+    margin: 5px 50px 10px 10px;
+}
+
+.XStaffList_SearchResult {
+    width: 100%;
+}
+
+/* 검색 결과 index */
+.XStaffList_Searchstaff {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50px repeat(6, 1fr);
+    align-items: center;
+    text-align: center;
+    border-top: 3px solid #C9EDFA;
+    background-color: #ceeff250;
+
+    height: 3rem;
+
+}
+
+.XStaffList_Searchstaff>span {
+    font-weight: bold;
+    padding: 5px
+}

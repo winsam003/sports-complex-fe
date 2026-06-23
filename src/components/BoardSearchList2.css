@@ -1,0 +1,18 @@
+.BoardSearchList_content2 {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr 2fr 1fr 0.5fr;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.BoardSearchList_content2Box{
+    height: 3rem;
+    line-height: 3rem;
+
+    cursor: pointer;
+}
+
+.BoardSearchList_content2Box:hover{
+    background-color: rgb(239, 240, 240);
+}

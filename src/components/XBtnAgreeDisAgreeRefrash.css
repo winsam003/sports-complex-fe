@@ -1,0 +1,18 @@
+/* 초기화 삭제 */
+.XBtnAgreeDisAgreeRefrash {
+    display: flex;
+    margin: 10px auto;
+    justify-content: flex-end;
+}
+
+.XBtnAgreeDisAgreeRefrash button {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    font-size: large;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}

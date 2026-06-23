@@ -1,0 +1,7 @@
+.XRentalPlaceControll_div {
+    display: flex;
+}
+
+.XRentalPlaceControll_div_div {
+    flex-grow: 1;
+}

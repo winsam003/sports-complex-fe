@@ -1,0 +1,124 @@
+.ClassSchedule_Containor{
+    width: 100%;
+    height: 80rem;
+
+    /* background-color: aqua; */
+}
+
+.ClassSchedule_Search{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 30%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+
+}
+.ClassSchedule_CalendarCaption {
+    /* height: 3.2rem; */
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a6e9ed;
+    /* border-top-right-radius: 1em;
+    border-top-left-radius: 1em; */
+    border-radius: 1rem;
+    /* font-weight: bold; */
+    font-size: 2.5rem;
+
+    margin-bottom: 10px;
+}
+
+.ClassSchedule_Calendar{
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+    width: 70%;
+    height: calc(100% - 3.2rem);
+    
+    background-color: #c7f3fa;
+    /* border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em; */
+
+    border-radius: 1rem;
+}
+
+.ClassSchedule_Calendar>div{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: 100%;
+
+    cursor: pointer;
+}
+.ClassSchedule_Calendar>div:hover{
+    background-color: rgb(156, 208, 224);
+}
+.ClassSchedule_Calendar div:not(:nth-child(4n)) {
+    border-right: 1px solid white;
+}
+.ClassSchedule_Calendar div:nth-child(-n+8){
+    border-bottom: 1px solid white;
+}
+.ClassSchedule_Calendar div:nth-child(1){
+    border-top-left-radius: 1em;
+}
+.ClassSchedule_Calendar div:nth-child(4){
+    border-top-right-radius: 1em;
+}
+.ClassSchedule_Calendar div:nth-child(9){
+    border-bottom-left-radius: 1em;
+}
+.ClassSchedule_Calendar div:nth-child(12){
+    border-bottom-right-radius: 1em;
+}
+.ClassSchedule_Icon {
+    padding-left: 8px;
+}
+
+
+.ClassSchedule_List{
+    width: 100%;
+    height: calc(70% - 4rem);
+
+
+    /* background-color: darkorange; */
+}
+
+.ClassSchedule_title{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0;
+
+    justify-content: center;
+    align-items: center;
+    background-color: #a6e9ed;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    font-weight: bold;
+}
+.ClassSchedule_title::before{
+    content: "\1F4CC"; 
+}
+
+.ClassSchedule_CheckBox{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 5rem;
+}
+
+.ClassSchedule_CheckBox>span{
+    margin-right: 3rem;
+}
+
+
+

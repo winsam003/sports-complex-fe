@@ -1,0 +1,7 @@
+.XStaffRegister_div {
+    display: flex;
+}
+
+.XStaffRegister_div_div {
+    flex-grow: 1;
+}

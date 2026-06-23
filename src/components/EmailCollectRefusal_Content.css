@@ -1,0 +1,12 @@
+.EmailCollectRefusal_Content_subtitle {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 35px 0 0 0;
+}
+
+.EmailCollectRefusal_Content_content {
+    background-color: #F6F6F6;
+    padding: 30px;
+    margin: 20px 15px;
+    border: rgba(28, 28, 28, 0.199) 1px solid;
+}

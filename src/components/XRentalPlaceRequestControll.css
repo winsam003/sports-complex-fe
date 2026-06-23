@@ -1,0 +1,47 @@
+.XRentalPlaceRequestControll_div {
+    display: flex;
+}
+
+.XRentalPlaceRequestControll_div_div {
+    flex-grow: 1;
+}
+
+/* 검색결과창 */
+/* 대표항목 */
+.XRentalPlaceRequestControll_index {
+    display: grid;
+    grid-template-columns: 50px 1fr 2fr 1fr 1fr 2fr 2fr 1fr;
+    margin-top: 30px;
+    border-top: 3px solid #C9EDFA;
+    background-color: #ceeff250;
+    text-align: center;
+}
+
+.XRentalPlaceRequestControll_index p {
+    justify-content: center;
+    align-items: center;
+    word-break: keep-all;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.XRentalPlaceRequestControll_index p:nth-of-type(2),
+.XRentalPlaceRequestControll_index p:nth-of-type(4) {
+    min-width: 90px;
+}
+
+@media (max-width : 1040px) {
+
+    /* 스크롤 박스 해제용 */
+    .XRentalPlaceRequestControll_div {
+        display: inherit;
+    }
+
+    /* 대표항목 */
+    .XRentalPlaceRequestControll_index {
+        width: 835px;
+    }
+
+
+}

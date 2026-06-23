@@ -1,0 +1,24 @@
+
+.XeventContentList_Box{
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: ivory; */
+}
+.XhomeBannerEventContent_contents{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 3fr 1fr;
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.XhomeBannerEventContent_contents:hover {
+    background-color: #f4f4f4;
+}

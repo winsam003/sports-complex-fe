@@ -1,0 +1,51 @@
+/* 내용 */
+.XRentalPlaceRequestControll_content {
+    display: grid;
+    grid-template-columns: 50px 1fr 2fr repeat(2, 1fr) 2fr 2fr 1fr;
+}
+
+.XRentalPlaceRequestControll_content p:nth-of-type(1),
+.XRentalPlaceRequestControll_content p:nth-of-type(3) {
+    min-width: 90px;
+}
+
+.XRentalPlaceRequestControll_span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 선택 체크박스 */
+.XRentalPlaceRequestControll_content input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20px;
+    margin-left: calc(50% - 10px);
+}
+
+.XRentalPlaceRequestControll_content p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: keep-all;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+@media (max-width : 1040px) {
+
+    /* 스크롤박스 */
+    .XRentalPlaceRequestControll_SearchList {
+        overflow: auto;
+    }
+
+
+
+    /* 내용 */
+    .XRentalPlaceRequestControll_content {
+        width: 835px;
+    }
+}

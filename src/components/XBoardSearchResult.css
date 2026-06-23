@@ -1,0 +1,83 @@
+/* 조회결과 index */
+.indexEvent{
+    display: grid;
+    border-top: 3px solid #C9EDFA;
+    background-color: #ceeff250;
+
+}
+/* 관리 */
+.XBoardControllContent_SearchResult_index {
+    grid-template-columns: 0.5fr 0.5fr 3fr 1fr 1fr 1fr 1fr 0.5fr;
+}
+/* 사용자 */
+.XBoardControllContent_SearchResult_index_User{
+    grid-template-columns: 0.5fr 3fr 1fr 1fr 1fr 0.5fr;
+}
+
+.indexEvent p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* 조회결과 */
+.listEvent{
+    display: grid;
+}
+.XBoardControllContent_SearchResult {
+    grid-template-columns: 0.5fr 0.5fr 3fr 1fr 1fr 1fr 1fr 0.5fr;
+}
+/* 사용자 */
+.XBoardControllContent_SearchResult_User{
+    grid-template-columns: 0.5fr 3fr 1fr 1fr 1fr 0.5fr;
+}
+
+.listEvent:hover{
+    background-color: rgb(239, 240, 240);
+}
+
+/* 체크박스 크기 조절 */
+.listEvent input {
+    display: inline-block;
+    width: 20px;
+}
+
+.listEvent p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.XBoardControllContent_clickDetail{
+    cursor: pointer;
+}
+
+@media (max-width : 1000px) {
+    .listEvent{
+        /* display: inherit; */
+    }
+
+    /* 조회결과 스크롤박스만들기 */
+    .XBoardControllContent_SearchResult_div {
+        overflow: auto;
+    }
+
+    .indexEvent {
+        width: 1000px;
+    }
+
+    .listEvent {
+        width: 1000px;
+        display: grid;
+    }
+    /* 관리자 */
+    .XBoardControllContent_SearchResult {
+        grid-template-columns: 0.5fr 0.5fr 3fr 1fr 1fr 1fr 1.5fr 1fr;
+    }
+    /* 사용자 */
+    .XBoardControllContent_SearchResult_User{
+        grid-template-columns: 0.5fr 3fr 1fr 1fr 1fr 1.5fr 1fr;
+    }
+}

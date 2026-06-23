@@ -1,0 +1,17 @@
+.SearchButton button {
+    width: 100px;
+    height: 50px;
+    margin: 10px 30px;
+    font-size: large;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width : 1200px) {
+    .SearchButton {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,92 @@
+/* 사용자 문의게시판 index */
+.XQnaSearchResult_SearchResult_user {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr 1fr 2fr 1fr 1fr;
+    height: 56px;
+}
+
+/* 관리자 문의게시판 index */
+.XQnaSearchResult_SearchResult_admin {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 5fr 1fr 2fr 1fr 1fr;
+    height: 56px;
+}
+
+.XQnaSearchResult_SearchResult_user p,
+.XQnaSearchResult_SearchResult_admin p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 게시글 제목 정렬 해제 */
+.XQnaSearchResult_SearchResult_user .XQnaSearchResult_SearchResult_title,
+.XQnaSearchResult_SearchResult_admin .XQnaSearchResult_SearchResult_title {
+    justify-content: left;
+}
+
+/* 공개여부 이미지 크기 조절 */
+.lockimg {
+    width: 32px;
+}
+
+.unlockimg {
+    width: 15px;
+}
+
+/* 모달창 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 배경을 반투명하게 만듭니다. */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 모달보다 낮은 z-index를 설정하여 모달 위에 오도록 합니다. */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    /* 모달보다 높은 z-index를 설정하여 모달이 가장 위에 오도록 합니다. */
+    z-index: 1001;
+}
+
+.modalFont {
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* 모달 닫기버튼 */
+.close {
+    cursor: pointer;
+    font-size: 24px;
+    color: #999;
+    z-index: 1002;
+}
+
+/* 모달창 비밀번호 입력박스 */
+.modal_input {
+    height: 24px;
+}
+
+/* 모달 비밀번호 확인버튼 */
+.modal_button {
+    margin-left: 10px;
+    padding: 0;
+    width: 50px;
+    height: 30px;
+    font-size: large;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}

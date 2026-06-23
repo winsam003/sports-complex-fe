@@ -1,0 +1,11 @@
+.EventBoardDetail {
+    /* position: relative; */
+    display: flex;
+
+}
+
+@media(max-width: 1200px) {
+    .EventBoardDetail {
+        width: 100%;
+    }
+}

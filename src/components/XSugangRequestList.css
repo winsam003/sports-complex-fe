@@ -1,0 +1,45 @@
+/* 내용 */
+.XSugangRequestList_content {
+    display: grid;
+    grid-template-columns: 50px 100px 1fr repeat(2, 100px) 1fr repeat(3, 100px);
+    ;
+}
+
+.XSugangRequestList_content p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: keep-all;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* 선택 체크박스 */
+.XSugangRequestList_content input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20px;
+    margin-left: calc(50% - 10px);
+}
+
+
+@media (max-width : 1010px) {
+
+    /* 스크롤박스 */
+    .XSugangRequestList {
+        overflow: auto;
+    }
+
+    /* 대표항목 */
+    .XSugangRequestList_index {
+        width: 820px;
+    }
+
+    /* 내용 */
+    .XSugangRequestList_content {
+        width: 820px;
+    }
+}

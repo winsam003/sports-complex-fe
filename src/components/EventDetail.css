@@ -1,0 +1,134 @@
+.EventDetailContainor{
+    /* background-color: #F6F6F6; */
+    width: 100%;
+
+    display: block;
+    position: relative;
+    align-items: center;
+    padding: 3rem;
+}
+/* 타이틀 */
+.EventDetail_title{
+    font-size: 2.5rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.EventDetail_title>*{
+    vertical-align: middle;
+    display: inline-block;
+}
+.EventDetail_icon{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* 아래 정보 */
+.EventDetail_menu{
+    display: flex;
+    /* margin-top: 2rem; */
+    border-bottom: 1px solid #ccc;
+    
+}
+.EventDetail_menu>*{
+    margin: 0;
+    padding: 1rem;
+    /* width: ; */
+}
+
+.EventDetail_menu>:first-child{
+    width: 150px;
+    font-weight: bold;
+
+    border-right: 1px solid #ccc;
+    background-color: rgb(209, 238, 241);
+}
+
+
+/* 오른쪽 정보 */
+.EventDetail_twin{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+/* 아래 내용 */
+.EventDetail_content{
+    padding: 1rem;
+}
+.EventDetail_content>:nth-child(2) {
+    text-align: center;
+    margin: 3rem;
+}
+/* 사진 */
+.EventDetail_content img{
+    width: 700px;
+}
+
+
+/* 버튼 */
+.EventDetail_buttonBox{
+    display: flex;
+
+    justify-content: end;
+
+    padding-top: 5rem;
+    border-top: 1px solid rgb(194, 191, 191);
+}
+.EventDetail_update{
+    margin-right: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    background-color: #db4c4c;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.EventDetail_button{
+    width: 100px;
+    height: 50px;
+    margin-right: 30px;
+    font-size: large;
+    background-color: #a5a6a7;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+.EventDetail_title>:first-child{
+    height: 100%;
+    font-weight: bold;
+
+}
+
+.EventDetail_goBack{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+@media(max-width: 1200px) {
+    .EventDetailContainor {
+        width: 100%;
+        padding: 0;
+    }
+    .EventDetail_content img{
+        width: 350px;
+    }
+    .EventDetail_title {
+        font-size: 1.6rem;
+    }
+    .EventDetail_twin{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}

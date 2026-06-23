@@ -1,0 +1,11 @@
+.XEventBoardDetail {
+    /* position: relative; */
+    display: flex;
+
+}
+
+@media(max-width: 1200px) {
+    .XEventBoardDetail {
+        width: 100%;
+    }
+}

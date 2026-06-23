@@ -1,0 +1,74 @@
+.BoxFacilityInformation_div {
+    display: grid;
+    grid-template-columns: repeat(3, 125px) repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    border-top: 3px solid #C9EDFA;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+    border-right: rgba(28, 28, 28, 0.199) 1px solid;
+    margin-bottom: 15px;
+}
+
+/* 이미지박스 */
+.BoxFacilityInformation_img_div {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 1/6;
+}
+
+.BoxFacilityInformation_img {
+    display: block;
+    height: 300px;
+    width: 100%;
+}
+
+/* 대표항목 */
+.BoxFacilityInformation_div p:nth-child(2n) {
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 2n-1/2n;
+    border-left: rgba(28, 28, 28, 0.199) 1px solid;
+    height: 60px;
+    margin: 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ceeff250;
+}
+
+/* 내용 */
+.BoxFacilityInformation_div p:nth-child(2n+1) {
+    display: grid;
+    grid-column: 5/8;
+    grid-row: 2n-1/2n;
+    border-left: rgba(28, 28, 28, 0.199) 1px solid;
+    border-right: rgba(28, 28, 28, 0.199) 1px solid;
+    height: 60px;
+    margin: 0;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
+}
+
+.BoxFacilityInformation_top_p {
+    border-top: rgba(28, 28, 28, 0.199) 1px solid;
+}
+
+@media (max-width : 1200px) {
+    .BoxFacilityInformation_div {
+        grid-template-columns: repeat(3, 100px) repeat(4, 1fr);
+        overflow-x: auto;
+    }
+
+    /* 대표항목 */
+    .BoxFacilityInformation_div p:nth-child(2n) {
+        min-width: 95px;
+    }
+
+    /* 세부 항목 */
+    .BoxFacilityInformation_div p:nth-child(2n+1) {
+        min-width: 350px;
+    }
+}

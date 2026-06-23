@@ -1,0 +1,28 @@
+.submenu_div {
+    padding-top: 10rem;
+    width: 200px;
+    height: 800px;
+    /* background-color: #3080e234; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* position: fixed; */
+}
+
+.submenu_div div {
+    margin-bottom: 1.8em;
+    border-bottom: rgba(0, 0, 0, 0.096) solid;
+    text-align: center;
+    width: 120px;
+}
+
+.submenu_div div:nth-last-of-type(1) {
+    border: none;
+}
+
+@media (max-width : 1200px) {
+    .submenu_div {
+        display: none;
+    }
+}

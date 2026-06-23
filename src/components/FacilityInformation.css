@@ -1,0 +1,24 @@
+/* 인사말, 시설안내 title */
+.greetings {
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* 인사말 소제목 */
+.greetings_subtitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 인사말 내용 박스 */
+.greetings_content {
+    margin-bottom: 35px;
+}
+
+/* 인사말 내용 */
+.greetings_content p {
+    margin: 0;
+}

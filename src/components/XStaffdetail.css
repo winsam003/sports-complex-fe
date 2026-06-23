@@ -1,0 +1,17 @@
+.XStaffdetail_contents {
+    display: grid;
+    grid-template-columns: 50px repeat(6, 1fr);
+    align-items: center;
+    text-align: center;
+
+    height: 3rem;
+}
+
+.XStaffdetail_contents:hover{
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.XStaffdetail_contents span {
+    padding: 5px 0;
+}

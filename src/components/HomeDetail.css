@@ -1,0 +1,444 @@
+/* 디테일 메뉴 컨테이너 */
+.homeDetail_container {
+    /* position: relative; */
+    display: flex;
+    height: 25rem;
+
+    /* background-color: chartreuse; */
+}
+
+.searchbtn {
+    cursor: pointer;
+}
+
+/* 디테일 메뉴 왼쪽 div (검색/월간일정/이벤트 광고)*/
+.homeDetail_items1 {
+    flex: 4;
+
+    /* margin: 0.7rem; */
+    /* background-color: coral; */
+}
+
+/* 디테일 메뉴 오른쪽 div (로그인/로그아웃) */
+.homeDetail_items2 {
+    flex: 2;
+
+    /* background-color: #35b8be; */
+    border-radius: 5%;
+    /* box-shadow: inset 0px 0px 10px 5px rgba(104, 101, 101, 0.5); */
+}
+
+
+/* input 부모 div */
+.homeDetail_items1>:first-child {
+    height: 3.6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: crimson; */
+}
+
+/* input (검색) 태그 */
+.homeDetail_items1>:first-child>:first-child {
+    width: 100%;
+    height: 60%;
+}
+
+.homeDetail_items1>div:first-child>input[type='submit'] {
+    height: 70%;
+    width: 15%;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+}
+
+.homeDetail_loginbox tr {
+    padding-bottom: 40%;
+}
+
+
+/* 월간일정 / 이벤트광고 */
+.homeDetail_items1>:last-child {
+    display: flex;
+    height: calc(100% - 3.6rem);
+}
+
+.homeDetail_items1>:last-child>:first-child {
+    flex: 2;
+    /* background-color: cornsilk; */
+}
+
+
+/* 디테일 메뉴 로그인/로그아웃 */
+.homeDetail_items2_fir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: calc(100% - 1.6rem);
+    width: calc(100% - 1.6rem);
+    transform: translate(0.8rem, 0.8rem);
+
+    border: 1px solid #27979d;
+    border-radius: 1em;
+
+}
+
+#homeDetail_loginbtn {
+    display: block;
+    width: 80%;
+    height: 40px;
+    background-color: #27979d;
+    border: none;
+    border-radius: 1em;
+    color: white;
+    font-size: 110%;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.homeDetail_Icon {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    padding-right: 1rem;
+}
+
+
+/* 로그인창 input 태그 */
+.homeDetail_loginbox input:nth-child(1),
+.homeDetail_loginbox input:nth-child(2) {
+    height: 25px;
+    /* border-radius: 0.5rem; */
+}
+
+/* 로그인 밑에 있는 .  */
+.homeDetail_helpLogin {
+    display: inline-block;
+    padding-top: 10%;
+}
+
+.homeDetail_helpLogin>a {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.homeDetail_helpLogin a:not(:nth-child(3)) {
+    border-right: 1px solid lightslategray;
+}
+
+
+
+/* 디테일 메뉴 로그인/로그아웃 (input태그 form) */
+.homeDetail_items2>:first-child>:first-child {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+}
+
+/* 월간일정 타이틀 */
+.homeDetail_CalendarCaption {
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a6e9ed;
+    /* border-top-right-radius: 1em;
+    border-top-left-radius: 1em; */
+
+    border-radius: 1rem;
+    margin-bottom: 10px;
+
+    font-weight: bold;
+}
+
+.homeDetail_CalendarCaption .homeDetail_Icon {
+    padding-left: 5px;
+}
+
+/* 월간일정 달력 */
+.homeDetail_Calenderbox {
+    margin-right: 10px;
+}
+
+.homeDetail_Calendar {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    width: 100%;
+    height: calc(100% - 3.2rem);
+
+    background-color: #c7f3fa;
+    /* border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em; */
+    border-radius: 1rem;
+
+}
+
+.homeDetail_Calendar>div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.homeDetail_Calendar div:not(:nth-child(4n)) {
+    border-right: 1px solid white;
+}
+
+.homeDetail_Calendar div:nth-child(-n+8) {
+    border-bottom: 1px solid white;
+}
+
+.homeDetail_Calendar div:nth-child(1) {
+    border-top-left-radius: 1em;
+}
+
+.homeDetail_Calendar div:nth-child(4) {
+    border-top-right-radius: 1em;
+}
+
+.homeDetail_Calendar div:nth-child(9) {
+    border-bottom-left-radius: 1em;
+}
+
+.homeDetail_Calendar div:nth-child(12) {
+    border-bottom-right-radius: 1em;
+}
+
+
+.homeDetail_Calendar>div:hover {
+    background-color: #e7f8fb;
+}
+
+/* 슬릭부분 부모 */
+.homeDetail_items1>:last-child>:last-child {
+    display: block;
+    flex: 3;
+    /* background-color: dodgerblue; */
+    height: 320px;
+    width: 400px;
+}
+
+.slideBox div>img {
+    border-radius: 1em;
+
+}
+
+.slideBox {
+    height: 320px;
+    width: 100%;
+}
+
+.slick-slide img {
+    width: 100%;
+    /* 이미지의 너비를 100%로 설정하여 고정된 크기 지정 */
+    height: 320px;
+    /* 이미지의 높이를 고정된 값으로 설정 */
+    object-fit: contain;
+    /* 이미지를 부모 요소의 크기에 맞게 커버되도록 설정 */
+}
+
+.slick-slide img:hover {
+    transform: scale(1.05);
+}
+
+.homeDetail_loginDiv {
+    /* background-color: ivory; */
+
+    border: solid 1px #ccc;
+    margin-top: 3.6rem;
+    height: calc(100% - 3.6rem);
+
+    border-radius: 15px;
+}
+
+.homeDetail_loginUserName {
+    /* margin-top: 3rem; */
+    margin-bottom: 3rem;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: x-large;
+    font-weight: bold;
+
+    background-color: #A6E9ED;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    /* color: LightSlateGray; */
+}
+
+.homeDetail_firstMenuBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-gap: 1rem; */
+    justify-content: center;
+    height: 8rem;
+
+}
+
+.homeDetail_firstMenuBox>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #ccc;
+
+    margin: 0.3rem 1.5rem;
+    /* padding-right: 2rem; */
+
+    /* background-color: #C7F3FA; */
+    /* border-radius: 15px; */
+}
+
+.homeDetail_firstMenuBox_s1:hover {
+    background-color: #C7F3FA;
+    cursor: pointer;
+}
+
+.homeDetail_firstMenuBox_s2:hover {
+    background-color: #C7F3FA;
+    cursor: pointer;
+}
+
+.homeDetail_firstMenuBox_s3:hover {
+    background-color: #C7F3FA;
+    cursor: pointer;
+}
+
+.homeDetail_firstMenuBox_s4:hover {
+    background-color: #C7F3FA;
+    cursor: pointer;
+}
+
+.homeDetail_lastMenuBox>span {
+    /* background-color: blue; */
+    width: 8rem;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ccc
+}
+
+.homeDetail_lastMenuBox>span:hover {
+    background-color: #C7F3FA;
+    cursor: pointer;
+}
+
+.homeDetail_lastMenuBox {
+    width: 100%;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: #C7F3FA; */
+    /* border-radius: 15px; */
+
+    margin-top: 1rem;
+
+}
+
+.homeDetail_icons {
+    margin-right: 5px;
+}
+
+@media(max-width: 1200px) {
+
+    /* 디테일 메뉴 컨테이너 */
+    .homeDetail_container {
+        display: block;
+        height: auto;
+    }
+
+    .homeDetail_login>td> {
+        text-align: right;
+    }
+
+    /* 디테일 메뉴 왼쪽 div (검색/월간일정/이벤트 광고)*/
+    .homeDetail_items1 {
+        height: 70%;
+
+        /* background-color: coral; */
+    }
+
+    /* 디테일 메뉴 오른쪽 div (로그인/로그아웃) */
+    .homeDetail_items2 {
+        height: 40%;
+
+    }
+
+    .homeDetail_items2_fir {
+        /* background-color: darkblue; */
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    /* .homeDetail_items2 table{
+        width: 90%;
+    } */
+    /* .homeDetail_items2 input:nth-child(1),
+    .homeDetail_items2 input:nth-child(2) {
+        width: 90%;
+        height: 25px;
+    }
+    #homeDetail_loginbtn{
+        width: 90%;
+    } */
+
+    .slideBox {
+        height: 222px;
+        width: 100%;
+    }
+
+    .slick-slide img {
+        width: 100%;
+        /* 이미지의 너비를 100%로 설정하여 고정된 크기 지정 */
+        height: 222px;
+        /* 이미지의 높이를 고정된 값으로 설정 */
+        object-fit: contain;
+        /* 이미지를 부모 요소의 크기에 맞게 커버되도록 설정 */
+    }
+
+    .homeDetail_items1>:last-child>:last-child {
+        height: 222px;
+    }
+
+    /* 창 작아지면 월간일정 없어지기.  */
+    .homeDetail_items1>:nth-child(2) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .slideBox {
+        width: 100%;
+    }
+
+    .homeDetail_items1>:last-child>:last-child {
+        order: 1;
+        width: 100%;
+    }
+
+    .homeDetail_Calenderbox {
+        margin-left: 10px;
+    }
+
+
+}

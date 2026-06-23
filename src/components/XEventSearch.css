@@ -1,0 +1,25 @@
+/* 검색창 전체 div */
+.XEventSearch {
+    margin-top: 30px;
+    margin-right: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* 검색 select */
+.XEventSearch select {
+    height: 26px;
+}
+
+/* 검색 버튼 */
+.XEventSearch button {
+    margin-left: 10px;
+    height: 26px;
+    width: 60px;
+    background-color: #059da5;
+    color: white;
+    border-radius: 5%;
+    border: none;
+}

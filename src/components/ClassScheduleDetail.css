@@ -1,0 +1,72 @@
+/* 목록 */
+.ClassScheduleDetail_index{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 980px;
+    
+    text-align: center;
+    justify-content: center;
+    
+    /* padding-top: 2rem; */
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: ghostwhite;
+}
+.ClassScheduleDetail_index>span{
+    font-weight: bold;
+}
+
+
+
+
+/* 리스트 들 */
+.ClassScheduleDetail_Box{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
+    width: 980px;
+    text-align: center;
+    
+
+    /* background-color: cornflowerblue; */
+
+    /* 꾸며보겠다.  */
+}
+.ClassScheduleDetail_Box button{
+    background-color: #90969a;
+    color: white;
+    border: none;
+    border-radius: 0.7rem;
+    
+}
+
+.ClassScheduleDetail_Box span{
+    padding: 0.5rem;
+    border-right: 1px solid rgb(253, 236, 255);
+    border-bottom: 1px solid rgb(214, 214, 214);
+    
+
+}
+.ClassScheduleDetail_Box:hover{
+    background-color: #f4f4f4;
+}
+
+
+@media (max-width : 1200px) {
+    .ClassScheduleDetail_div{
+        overflow: auto;
+        white-space: nowrap;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .ClassScheduleDetail_index{
+        position: initial;
+    }
+    .ClassScheduleDetail_Box{
+        position: initial;
+
+    }
+
+}

@@ -1,0 +1,23 @@
+.XclassListDetail_Box{
+    
+    width: 100%;
+    
+    
+    margin-top: 3rem;
+}
+
+.XclassListDetail_category{
+    background-color: lightblue;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr 1fr 1fr 2fr 1fr;
+
+}
+
+.XclassListDetail_category>span{
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

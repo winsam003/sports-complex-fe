@@ -1,0 +1,20 @@
+.XuserInfoListContents_Box{
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    background-color: ivory;
+}
+
+.XuserInfoListContents_contents{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.XuserInfoListContents_contents>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

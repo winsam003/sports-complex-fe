@@ -1,0 +1,148 @@
+/* 찾아오시는길 */
+.VisitWayContent_subtitle {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 35px 0 30px 0;
+}
+
+/* 소제목 */
+.VisitWayContent_map p,
+.VisitWayContent_info p,
+.VisitWayContent_transport p {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* 지도 */
+#map {
+    height: 450px;
+    width: 100%;
+}
+
+.custom-marker {
+    color: #9971ff;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 2.5px;
+    background: #ceeff250;
+}
+
+/* 정보 */
+.VisitWayContent_info_div {
+    display: grid;
+    text-align: center;
+    border-top: 3px solid #C9EDFA;
+    border-left: rgba(28, 28, 28, 0.199) 1px solid;
+}
+
+/* 대표항목 */
+.VisitWayContent_info_index {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 1fr;
+}
+
+.VisitWayContent_info_index span {
+    border-right: rgba(28, 28, 28, 0.199) 1px solid;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+    background-color: #ceeff250;
+    font-weight: bold;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 정보 내용 */
+.VisitWayContent_info_content {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+/* 정보 대표항목 */
+.VisitWayContent_info_content span {
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: rgba(28, 28, 28, 0.199) 1px solid;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+}
+
+/* 정보 세부항목 */
+.VisitWayContent_info_content span:nth-of-type(2n+1) {
+    grid-column: 1/2;
+    grid-row: 2n / n+1;
+    background-color: #ceeff250;
+}
+
+/* 정보 내용 */
+.VisitWayContent_info_content span:nth-of-type(2n) {
+    grid-column: 2/3;
+    grid-row: 2n / n+1;
+}
+
+/* 교통안내 */
+.VisitWayContent_transport_index {
+    display: grid;
+    border-top: 3px solid #C9EDFA;
+    border-left: rgba(28, 28, 28, 0.199) 1px solid;
+    grid-template-columns: 1fr 2fr 4fr;
+}
+
+/* 교통안내 대표항목 */
+.VisitWayContent_transport_index span {
+    border-right: rgba(28, 28, 28, 0.199) 1px solid;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+    background-color: #ceeff250;
+    font-weight: bold;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 교통안내 정보내용 */
+.VisitWayContent_transport_content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+    grid-template-rows: repeat(5, 1fr);
+    border-left: rgba(28, 28, 28, 0.199) 1px solid;
+}
+
+/* 교통안내 내용 */
+.VisitWayContent_transport_content span {
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: rgba(28, 28, 28, 0.199) 1px solid;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+}
+
+/* 세부항목 */
+.VisitWayContent_transport_content p:nth-of-type(1) {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: #ceeff250;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: rgba(28, 28, 28, 0.199) 1px solid;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+}
+
+/* 내용 */
+.VisitWayContent_transport_content p:nth-of-type(2) {
+    grid-column: 1/2;
+    grid-row: 4/7;
+    background-color: #ceeff250;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: rgba(28, 28, 28, 0.199) 1px solid;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+}

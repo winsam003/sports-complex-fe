@@ -1,0 +1,25 @@
+.HistoryClassContent_div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr repeat(5, 1fr);
+}
+
+.HistoryClassContent_div p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HistoryClassContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HistoryClassContent button {
+    margin: 0 2px;
+    cursor: pointer;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+}

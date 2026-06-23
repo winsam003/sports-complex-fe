@@ -1,0 +1,16 @@
+.XFaqControllContentListContents_contents {
+    display: grid;
+
+    grid-template-columns: 0.5fr 0.5fr 3fr 1fr 2fr 1fr 0.5fr;
+
+    cursor: pointer;
+}
+
+.XFaqControllContentListContents_contents:hover {
+    background-color: rgb(239, 240, 240);
+}
+
+.XFaqControllContentListContents_contents>p {
+    height: 100%;
+
+}

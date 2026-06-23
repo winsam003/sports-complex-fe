@@ -1,0 +1,74 @@
+/* 검색창  */
+.PlaceRentalSearch_div {
+    margin-top: 30px;
+    width: 980px;
+    border-top: 3px solid #C9EDFA;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* 대분류, 소분류, 요일선택, 교육대상 span 크기 조정 */
+.PlaceRentalSearch_div div span {
+    display: inline-block;
+    width: 100px;
+    padding-left: 10px;
+}
+
+/* 대분류 select */
+.PlaceRentalSearch_MainCategory_select {
+    width: 120px;
+    margin-left: 0;
+}
+
+/* 소분류, 교육대상 select */
+.PlaceRentalSearch_SubCategory_select {
+    width: 160px;
+    margin-left: 0;
+}
+
+/* 대분류 grid */
+.PlaceRentalSearch_MainCategory {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+/* 소분류 grid */
+.PlaceRentalSearch_SubCategory {
+    grid-column: 2/4;
+    grid-row: 1/2;
+
+    /* display: flex;
+    align-items: center;
+    justify-self: flex-end; */
+}
+
+/* 시설명 grid */
+.PlaceRentalSearch_PlaceName {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+}
+
+.PlaceRentalSearch_MainCategory span,
+.PlaceRentalSearch_SubCategory span,
+.PlaceRentalSearch_PlaceName span {
+    font-weight: bold;
+}
+
+.PlaceRentalSearch_PlaceName input {
+    width: 85%;
+    margin-left: 0;
+}
+
+@media (max-width : 1200px) {
+    .PlaceRentalSearch_div {
+        width: 100%;
+    }
+
+    .PlaceRentalSearch_PlaceName input {
+        width: 400px;
+    }
+}

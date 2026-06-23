@@ -1,0 +1,152 @@
+.ModifyMember_joinbox {
+    height: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* position: absolute; */
+    top: 0;
+    right: 0px;
+    width: 100%;
+}
+
+.ModifyMember_midbox {
+    /* background-color: #F6F6F6; */
+    width: 80%;
+    height: 100%;
+}
+
+.ModifyMember_midbox>div,
+.ModifyMember_midbox>p {
+    text-align: center;
+}
+
+.ModifyMember_title {
+    font-size: 2rem;
+    padding-top: 40px;
+}
+
+.ModifyMember_midbox table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.ModifyMember_midbox th {
+    background-color: FloralWhite;
+    border: 1px solid #ccc;
+    width: 200px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.ModifyMember_midbox td {
+    border: 2px solid #ccc;
+}
+
+.ModifyMember_midbox input,
+.ModifyMember_midbox select {
+    margin: 10px;
+}
+
+.ModifyMember_midbox input[type="text"],
+.ModifyMember_midbox input[type="password"],
+.ModifyMember_midbox input[type="number"],
+.ModifyMember_midbox input[type="email"] {
+    height: 50px;
+    border: 1px solid gray;
+}
+
+.ModifyMember_midbox #name,
+.ModifyMember_midbox #birth,
+.ModifyMember_midbox #id,
+.ModifyMember_midbox #password,
+.ModifyMember_midbox #password2,
+.ModifyMember_midbox #address1,
+.ModifyMember_midbox #address2,
+.ModifyMember_midbox #carNum {
+    width: 75%;
+}
+
+.ModifyMember_midbox #email,
+.ModifyMember_midbox #emailAdd,
+.ModifyMember_midbox #email2 {
+    height: 50px;
+    width: 200PX;
+}
+
+.ModifyMember_midbox #firstPhoneNum,
+.ModifyMember_midbox #secondPhoneNum,
+.ModifyMember_midbox #lastPhoneNum {
+    height: 50px;
+    width: 100px;
+}
+
+.ModifyMember_submitBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.ModifyMember_submitBox * {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(88, 143, 175);
+    color: white;
+    font-size: large;
+    border: none;
+    margin: 30px;
+}
+
+.ModifyMember_submit {
+    width: 200px;
+    margin: 10px 10px;
+    height: 50px;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.ModifyMember_star {
+    color: red;
+}
+
+.ModifyMember_midbox>span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.ModifyMember_midbox td>a {
+    display: inline-block;
+    background-color: gray;
+    height: 50px;
+    width: 130px;
+    vertical-align: middle;
+    line-height: 50px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+}
+
+.ModifyMember_midbox td>p {
+    margin: 10px;
+}
+
+.ModifyMember_button {
+    width: 100px;
+    margin: 10px 10px;
+    height: 50px;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}

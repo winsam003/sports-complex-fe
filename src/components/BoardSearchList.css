@@ -1,0 +1,54 @@
+/* 검색결과 인덱스 */
+.BoardSearchList_div {
+    border-top: 3px solid #C9EDFA;
+    background-color: #ceeff250;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr 2fr 1fr 0.5fr;
+    text-align: center;
+}
+
+/* 검색결과 내용 */
+.BoardSearchList_content {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr 2fr 1fr 0.5fr;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+@media (max-width : 1200px) {
+
+
+    .BoardSearchList_div {
+        width: 100%;
+    }
+
+    .BoardSearchList_content {
+        width: 100%;
+    }
+}
+
+@media (max-width : 850px) {
+
+    .board_div {
+        display: inherit;
+    }
+
+    .BoardSearchList {
+        overflow: auto;
+    }
+
+    .BoardSearchList_div {
+        grid-template-columns: 100px 400px 120px 120px;
+        width: 740px;
+    }
+
+    /* 내용 */
+    .BoardSearchList_content {
+        position: initial;
+        grid-template-columns: 100px 400px 120px 120px;
+        width: 740px;
+    }
+}

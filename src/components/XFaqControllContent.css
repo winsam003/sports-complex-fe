@@ -1,0 +1,7 @@
+.XFaqControllContent_div {
+    display: flex;
+}
+
+.XFaqControllContent_div_div {
+    flex-grow: 1;
+}

@@ -1,0 +1,15 @@
+ .XFaqControllContentList_title {
+     display: grid;
+     border-top: 3px solid #C9EDFA;
+     background-color: #ceeff250;
+
+     grid-template-columns: 0.5fr 0.5fr 3fr 1fr 2fr 1fr 0.5fr;
+ }
+
+ .XFaqControllContentList_title>p {
+     font-weight: bold;
+ }
+
+ .XFaqControllContentList_div {
+     text-align: center;
+ }

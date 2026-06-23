@@ -1,0 +1,114 @@
+/* 전체박스 */
+.SugangRequestSearchbox_box {
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* 강의정보 글자 */
+.SugangRequestSearchbox_title {
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* 아이디 */
+.SugangRequestSearchbox_idinputBox {
+    border-top: 3px solid #C9EDFA;
+    display: grid;
+    grid-template-columns: 79px 250px;
+    padding: 5px 0;
+    width: 100%;
+    background-color: #ceeff250;
+}
+
+.SugangRequestSearchbox_idinputBox span {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/* input 태그 */
+.SugangRequestSearchbox_input {
+    height: 26px;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
+/* 대분류 세부종목 박스  */
+.SugangRequestSearchbox_division {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #ceeff250;
+    padding: 5px 0;
+}
+
+/* 대분류 세부종목 글자 */
+.SugangRequestSearchbox_division>span {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/* 대분류의 select 박스 */
+.SugangRequestSearchbox_division span:nth-of-type(1) select {
+    margin-left: 35px;
+}
+
+/* 대분류 세부종목 select */
+.SugangRequestSearchbox_division>span>select {
+    margin-left: 20px;
+    height: 26px;
+    width: 5rem;
+}
+
+/* 검색 컨테이너 박스 */
+.SugangRequestSearchbox_inputBox {
+    display: grid;
+    grid-template-columns: 79px 250px;
+    padding: 5px 0;
+    width: 100%;
+    background-color: #ceeff250;
+}
+
+/* 강좌명 */
+.SugangRequestSearchbox_inputBox span {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/* input 태그 */
+.SugangRequestSearchbox_input {
+    height: 26px;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
+/* 검색 요일, 대상(성인, 아동) */
+.SugangRequestSearchbox_target {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px 0;
+    background-color: #ceeff250;
+}
+
+.SugangRequestSearchbox_target span {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.SugangRequestSearchbox_target>span>select {
+    margin-left: 20px;
+    height: 26px;
+    width: 5rem;
+}

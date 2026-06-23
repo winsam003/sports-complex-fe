@@ -1,0 +1,28 @@
+.board_div {
+    display: flex;
+}
+
+.board_div_div {
+    flex-grow: 1;
+}
+
+.board_writebutton {
+    justify-content: flex-end;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(88, 143, 175);
+    font-size: large;
+    border: none;
+}
+
+.board_writebutton * {
+    color: white;
+}
+
+@media (max-width :1200px) {
+    .board_writebutton {
+        position: inherit;
+        margin-top: 40px;
+        left: calc(100% - 100px);
+    }
+}

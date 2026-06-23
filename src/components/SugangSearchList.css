@@ -1,0 +1,22 @@
+/* 내용 */
+.SugangSearchList_content {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr repeat(5, 1fr);
+    text-align: center;
+}
+
+@media (max-width : 1050px) {
+    .SugangSearchList_div {
+        overflow: auto;
+        white-space: nowrap;
+        margin-top: 30px;
+    }
+
+    .SugangSearchList_index {
+        width: 860px;
+    }
+
+    .SugangSearchList_content {
+        width: 860px;
+    }
+}

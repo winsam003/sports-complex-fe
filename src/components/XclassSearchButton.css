@@ -1,0 +1,21 @@
+.XclassSearchBox_button {
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.XclassSearchBox_button>button {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    height: 3rem;
+    width: 6rem;
+    font-size: large;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+
+}

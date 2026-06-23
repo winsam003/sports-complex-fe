@@ -1,0 +1,84 @@
+.XBoardWriteContent_div {
+    display: flex;
+}
+
+.XBoardWriteContent_div_div {
+    flex-grow: 1;
+}
+
+/* 필수항목 */
+.XBoardWriteContent_haveto * {
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.XBoardWriteContent_haveto,
+.star {
+    color: red;
+}
+
+/* 게시글 양식 */
+.XBoardWriteContent_form table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* 게시글 input box */
+.XBoardWriteContent_form input {
+    height: 40px;
+}
+
+.XBoardWriteContent_form input[type="text"],
+.XBoardWriteContent_form input[type="password"] {
+    width: 95%;
+}
+
+/* 게시글 항목 */
+.XBoardWriteContent_form th {
+    border: 1px solid lightslategray;
+    width: 25%;
+    height: 50px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+/* 게시글 내용 */
+.XBoardWriteContent_form td {
+    border: 1px solid lightslategray;
+    padding: 5px;
+    height: 100%;
+    width: max-content;
+}
+
+.XBoardWriteContent_form td * {
+    vertical-align: middle;
+}
+
+/* 공지사항 종류 */
+.XBoardWriteContent_form label {
+    margin-right: 20px;
+}
+
+/* 게시글 내용 작성box */
+.XBoardWriteContent_form #content {
+    height: 300px;
+    /* line-height: 300px; */
+    width: 100%;
+    vertical-align: top;
+    /* 엔터키 가능하게 하려면 자바스크립트로 해야됨. 언젠간 해라.  */
+}
+
+/* 게시판 등록, 목록 버튼 */
+.XBoardWriteContent_btn_div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.XBoardWriteContent_btn_div button {
+    margin: 0 30px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}

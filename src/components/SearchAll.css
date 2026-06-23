@@ -1,0 +1,97 @@
+.SearchAll_Containor{
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+
+}
+
+
+.SearchAll_main{
+    background-color: #F0FFFF;
+
+}
+
+.SearchAll_SearchBox{
+
+    background-color: #C9EDFA;
+
+    border-bottom: 3px solid #059DA5;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.SearchAll_SearchDetail{
+    border-bottom: 1px solid #059DA5;
+}
+
+.SearchAll_sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 10rem;
+
+    /* background-color: #F0FFFF; */
+}
+
+.SearchAll_sidebarMenu{
+    margin-bottom: 2rem;
+
+    font-size: large;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border-radius: 10px;
+}
+
+.SearchAll_SearchBox_title{
+    /* height: 3rem; */
+
+    font-size: large;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 3.5rem;
+
+    
+}
+
+.SearchAll_SearchBox_SearchContainor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* height: 100%; */
+}
+
+.SearchAll_SearchBox_Search{
+    width: 80%;
+    height: 3rem;
+    margin-right: .2rem;
+}
+
+.SearchAll_SearchBox_SeacrchBtn{
+    width: 4rem;
+    height: 3.5rem;
+
+    background-color: #059DA5;
+    border: none;
+    color: white;
+
+    cursor: pointer;
+}
+
+.SearchAll_SearchBox_detailTitle{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}

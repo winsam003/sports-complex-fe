@@ -1,0 +1,112 @@
+.XParkingControll_div {
+    display: flex;
+}
+
+.XParkingControll_div_div {
+    flex-grow: 1;
+    margin-top: 2rem;
+}
+.XParkingControllSearchBox_div {
+    margin-top: 40px;
+}
+
+/* 검색창 */
+.XParkingControllSearchBox_div select {
+    margin: 0 10px;
+}
+
+.XParkingControllSearchBox_div input {
+    padding: 0;
+}
+
+.XParkingControllSearchBox_div button {
+    margin-left: 10px;
+    height: 26px;
+    width: 50px;
+    background-color: #059da5;
+    color: white;
+    border-radius: 5%;
+    border: none;
+}
+#XParkingControll_result{
+    margin-top: 0;
+}
+
+/* 왼쪽 검색 */
+.XParkingControll_searchTitle{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    /* border-right: 1px solid black; */
+    background-color: #5ec0c5;
+    text-align: center;
+    line-height: 40px;
+}
+.XParkingControll_inputbox > select,
+.XParkingControll_inputbox > input{
+    margin-left: 20px;
+    display: inline-block;
+}
+.XParkingControll_searchblock{
+    border: 1px solid #059da5;
+}
+
+
+/* 조회결과 */
+.XParkingControllSearchResult_div {
+    margin-top: 10px;
+}
+#XParkingControll_nolist{
+    text-align: center;
+    margin: 1rem;
+}
+
+/* 대표항목 */
+.XParkingControllSearchResult_index {
+    border-top: 3px solid #C9EDFA;
+    background-color: #ceeff250;
+    display: grid;
+    grid-template-columns: 50px repeat(8, 1fr);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.XParkingControllSearchResult_index span {
+    font-weight: bold;
+    word-break: keep-all;
+}
+
+/* 내용 */
+.XParkingControllSearchResult_content {
+    display: grid;
+    grid-template-columns: 50px repeat(8, 1fr);
+    padding: 10px 0;
+    
+}
+
+.XParkingControllSearchResult_content div,
+.XParkingControllSearchResult_content span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-break: keep-all;
+}
+
+@media (max-width :980px) {
+
+    /* 최상위 div flex를 풀어 스크롤박스 */
+    .XParkingControll_div {
+        display: inherit;
+    }
+
+    .XParkingControllSearchResult_div {
+        overflow: auto;
+    }
+
+    /* 조회결과 */
+    .XParkingControllSearchResult_index,
+    .XParkingControllSearchResult_content {
+        width: 800px;
+    }
+}

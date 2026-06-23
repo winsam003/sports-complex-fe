@@ -1,0 +1,35 @@
+.XEventControllContent_div {
+    display: flex;
+}
+
+.XEventControllContent_div_div {
+    flex-grow: 1;
+}
+
+/* 등록 버튼 */
+.XEventControllContent_uploadAndSearch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.XEventControllContent_uploadAndSearch>button{
+    margin-left: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+}
+
+@media(max-width: 1200px){
+    .XEventControllContent_div {
+        display: inherit;
+    }
+
+}

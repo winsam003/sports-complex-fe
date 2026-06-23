@@ -1,0 +1,91 @@
+/* 검색창  */
+.XRentalPlaceSearchBox_div {
+    margin-top: 30px;
+    border-top: 3px solid #C9EDFA;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* 대분류, 소분류, 요일선택, 교육대상 span 크기 조정 */
+.XRentalPlaceSearchBox_div div span {
+    display: inline-block;
+    width: 130px;
+    padding-left: 10px;
+}
+
+/* 대분류 select */
+.XRentalPlaceSearchBox_MainCategory_select {
+    width: 120px;
+    margin-left: 0;
+}
+
+/* 소분류, 교육대상 select */
+.XRentalPlaceSearchBox_SubCategory_select {
+    width: 160px;
+    margin-left: 0;
+}
+
+/* 대분류 grid */
+.XRentalPlaceSearchBox_MainCategory {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 10px;
+}
+
+/* 소분류 grid */
+.XRentalPlaceSearchBox_SubCategory {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    margin: 10px;
+}
+
+/* 강좌명 grid */
+.XRentalPlaceSearchBox_Sugangtitle {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.XRentalPlaceSearchBox_MainCategory span,
+.XRentalPlaceSearchBox_SubCategory span,
+.XRentalPlaceSearchBox_Sugangtitle span {
+    font-weight: bold;
+}
+
+.XRentalPlaceSearchBox_Sugangtitle input {
+    width: 65.62%;
+    margin-left: 0;
+}
+/* 버튼 */
+.XRentalPlaceSearchBox_bottondiv{
+    display: flex;
+    justify-content: end;
+    /* padding: 1rem; */
+
+}
+.XRentalPlaceSearchBox_botton{
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+@media (max-width : 1200px) {
+    .XRentalPlaceSearchBox_div {
+        position: initial;
+        width: 100%;
+    }
+
+    .XRentalPlaceSearchBox_Sugangtitle input {
+        width: 400px;
+    }
+}

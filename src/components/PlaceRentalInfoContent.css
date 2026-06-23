@@ -1,0 +1,101 @@
+/* 서브타이틀 */
+.RentalInfoSearchButton_title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* 사용허가절차 & 신청 */
+.RentalInfoSearchButton_OK_div {
+    margin-top: 10px;
+}
+
+/* 조례 및 조건사항 */
+.RentalInfoSearchButton_Conditions_div {
+    margin-top: 40px;
+}
+
+/* 스크롤 박스 */
+.RentalInfoSearchButton_scrollbox {
+    background-color: #F6F6F6;
+    height: 180px;
+    padding: 30px;
+    margin: 0 15px;
+    overflow-y: auto;
+    border: black solid 1px;
+}
+
+.RentalInfoSearchButton>button{
+    cursor: pointer;
+}
+
+.TermsAndConditions_subtitle {
+    margin: 15px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* 우선순위 */
+.RentalInfoSearchButton_ul {
+    border: 1px black solid;
+    list-style: none;
+    margin-bottom: 16px;
+    padding: 0;
+    display: flex;
+}
+
+.RentalInfoSearchButton_ul li {
+    width: 25%;
+    height: 70px;
+    font-size: 19px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.RentalInfoSearchButton_ul li span {
+    display: block;
+}
+
+/* 사용허가절차, 조례 내용 */
+.RentalInfoSearchButton_pre {
+    margin: 0;
+}
+
+/* 신청서다운로드 허가신청 버튼 */
+.RentalInfoSearchButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.RentalInfoSearchButton * {
+    color: white;
+
+}
+
+.RentalInfoSearchButton button {
+    margin: 0 20px;
+    width: 200px;
+    height: 75px;
+
+    background-color: rgb(88, 143, 175);
+    font-size: large;
+    border: none;
+
+    cursor: pointer;
+}
+
+@media (max-width : 1200px) {
+    .board_div {
+        display: inherit;
+    }
+
+    .RentalInfoSearchButton_scrollbox {
+        overflow: auto;
+    }
+
+    .RentalInfoSearchButton_ul {
+        min-width: 520px;
+    }
+}

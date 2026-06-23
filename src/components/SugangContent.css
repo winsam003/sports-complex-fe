@@ -1,0 +1,12 @@
+/* 대표항목 */
+.SugangSearchList_index {
+    border-top: 3px solid #C9EDFA;
+    background-color: #ceeff250;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr repeat(5, 1fr);
+    text-align: center;
+}
+
+.SugangSearchList_index span {
+    font-weight: bold;
+}

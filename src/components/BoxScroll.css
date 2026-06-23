@@ -1,0 +1,10 @@
+.TermsAndConditions_scrollbox {
+    background-color: #fff;
+    height: 200px;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.TermsAndConditions_pre {
+    margin: 0;
+}

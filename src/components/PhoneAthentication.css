@@ -1,0 +1,17 @@
+.PhoneAthentication_box {
+    /* background-color: palegreen; */
+    padding-top: 20px;
+    border: 2px solid lightgray;
+}
+.PhoneAthentication_title {
+    font-size: 1.5rem;
+    padding: 20px;
+}
+.PhoneAthentication_call{
+    font-size: large;
+    font-weight: 600;
+}
+
+.PhoneAthentication_button{
+    cursor: pointer;
+}

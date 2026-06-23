@@ -1,0 +1,8 @@
+.HistoryRentalBattleContents_list {
+    display: grid;
+    grid-template-columns: 2fr 3fr repeat(2, 2fr) 1.5fr 2fr 2fr;
+}
+
+.HistoryRentalContent_button {
+    margin-left: 5px;
+}

@@ -1,0 +1,151 @@
+/* 전체 div */
+.InquiryRegistration_box {
+    /* background-color: white; */
+    display: flex;
+}
+
+/* 내용 div */
+.InquiryRegistration_infoBox {
+    background-color: ivory;
+    padding: 20px;
+}
+
+/* 문의게시판 등록 */
+.InquiryRegistration_InquiryInfo>h1 {
+    margin-top: 40px;
+}
+
+/* 소제목 */
+.InquiryRegistration_miniTitle::before {
+    content: "\1F4CC";
+    margin-right: 0.5em;
+}
+
+/* 동의 checkbox */
+.InquiryRegistration_check {
+    text-align: right;
+}
+
+/* 상세내용 */
+.InquiryRegistration_infoBox>ul {
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+.InquiryRegistration_infoBox>ul>li {
+    list-style: none;
+}
+
+.InquiryRegistration_infoBox li {
+    margin-bottom: 10px;
+}
+
+.InquiryRegistration_infoBox>ul>li::before {
+    content: "\2714";
+    margin-right: 0.5em;
+    margin-left: 0;
+}
+
+.InquiryRegistration_infoBox p {
+    font-weight: bold;
+}
+
+.InquiryRegistration_form {
+    background-color: #F6F6F6
+}
+
+/* 문의게시글 작성 */
+.InquiryRegistration_haveto p:nth-child(1) {
+    color: darkblue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* 필수작성 목록들. className='star' */
+.InquiryRegistration_InquiryInfo .star {
+    color: red;
+}
+
+/* 이 아래부터 form */
+.InquiryRegistration_form table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.InquiryRegistration_form th {
+    border: 1px solid lightslategray;
+    width: 25%;
+    height: 50px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+.InquiryRegistration_form td {
+    border: 1px solid lightslategray;
+    padding: 5px;
+    height: 100%;
+    width: max-content;
+}
+
+.InquiryRegistration_form td * {
+    vertical-align: middle;
+}
+
+.InquiryRegistration_form input {
+    height: 40px;
+
+}
+
+.InquiryRegistration_form #id {
+    width: 50%;
+}
+
+.InquiryRegistration_form #qacontent {
+    height: 300px;
+    line-height: 300px;
+    /* 엔터키 가능하게 하려면 자바스크립트로 해야됨. 언젠간 해라.  */
+}
+
+.InquiryRegistration_form input[type="text"],
+.InquiryRegistration_form input[type="password"] {
+    width: 95%;
+}
+
+.InquiryRegistration_upload {
+    align-items: center;
+}
+
+.InquiryRegistration_form label {
+    margin-right: 20px;
+}
+
+#InquiryRegistration_facilityUsed {
+    margin: 0;
+    width: 200px;
+    height: 50px;
+}
+
+.InquiryRegistration_btn_div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.InquiryRegistration_btn_div button {
+    margin-left: 10px;
+    height: 50px;
+    width: 100px;
+    background-color: #059da5;
+    color: white;
+    border-radius: 5%;
+    border: none;
+}
+
+/* width : 500-1200 */
+/* @media (max-width: 1200px) {
+    .InquiryRegistration_box>div:nth-child(2){
+        padding-left: 0; 
+    }
+    
+    
+}  */

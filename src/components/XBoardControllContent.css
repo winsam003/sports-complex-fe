@@ -1,0 +1,7 @@
+.XBoardControllContent_div {
+    display: flex;
+}
+
+.XBoardControllContent_div_div {
+    flex-grow: 1;
+}

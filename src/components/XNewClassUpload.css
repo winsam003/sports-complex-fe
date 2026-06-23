@@ -1,0 +1,120 @@
+.XNewClassUpload {
+    display: flex;
+}
+
+.XNewClassUpload_div {
+    width: 100%;
+}
+
+/*  타이틀 */
+.XNewClassUpload_Title {
+    margin: 1rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/* 테이블 */
+.XNewClassUpload_table {
+    width: 100%;
+    /* background-color: antiquewhite; */
+    border-top: 2px solid #27979d;
+    border-bottom: 2px solid #27979d;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.XNewClassUpload_table th {
+    background-color: #a6e9ed;
+    width: 30%;
+}
+
+.XNewClassUpload_table th,
+.XNewClassUpload_table td {
+    border-bottom: 1px solid rgb(194, 188, 188);
+}
+
+.XNewClassUpload_table tr {
+    height: 3rem;
+}
+
+.newClassesSelect {
+    width: 150px;
+}
+
+.XNewClassUpload_table input {
+    margin: 10px;
+}
+
+/* 신청 날짜  */
+.XNewClassUpload_classAppDate {
+    background-color: rgb(231, 226, 159);
+}
+
+/* 시작과 끝 */
+.XNewClassUpload_startEnd {
+    background-color: rgb(214, 184, 138);
+}
+
+.XNewClassUpload_table tr:hover {
+    background-color: #f0fafa;
+    /* opacity: 0.5; */
+}
+
+/* 강사 찾기 */
+.XNewClassUpload_div .XlectureInfoList_Box {
+    background-color: white;
+    border: 3px dashed rgb(79, 151, 79);
+    border-radius: 1rem;
+}
+
+.XNewClassUpload_div .XlectureInfoList_Box button {
+    background-color: rgb(79, 151, 79);
+}
+
+/* 신규수업등록버튼 */
+.XNewClasseBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.XNewClasseBtn button {
+    width: 100px;
+    height: 50px;
+    margin-right: 30px;
+    font-size: large;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+/* 강사 등록 버튼 */
+.XNewClassUpload_submitBtn {
+    text-align: right;
+    margin: 1rem;
+}
+
+.XNewClassUpload_submitBtn>input {
+    height: 3rem;
+    width: 7rem;
+    font-size: 1.1rem;
+
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+
+    cursor: pointer;
+}
+
+@media(max-width: 1200px) {
+    .XNewClassUpload_table th {
+        width: 100px;
+        font-size: 80%;
+    }
+}

@@ -1,0 +1,58 @@
+/* 전체 박스 */
+.RegistrationFlow_Box {
+    margin-bottom: 20px;
+}
+
+.RegistrationFlow_ul>span {
+    font-size: larger;
+}
+
+
+.RegistrationFlow_ul {
+    list-style: none;
+    margin: 40px 0 0 0;
+    padding: 0;
+
+}
+
+.RegistrationFlow_ul li {
+    width: 220px;
+    height: 70px;
+    padding-top: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ffffff;
+}
+
+/* step 내용 */
+.RegistrationFlow_ul li span {
+    display: block;
+    font-weight: bold;
+}
+
+.RegistrationFlow_ul li span:nth-of-type(1) {
+    padding-top: 10px;
+}
+
+.RegistrationFlow_ul li span:nth-of-type(2) {
+    padding-bottom: 10px;
+}
+
+/* 현재 위치 표시 */
+.textBold {
+    background-color: #ceeff27c;
+}
+
+@media (max-width : 1200px) {
+    .RegistrationFlow_ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .RegistrationFlow_ul li {
+        width: 100%;
+    }
+}

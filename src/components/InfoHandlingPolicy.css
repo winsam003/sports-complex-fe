@@ -1,0 +1,61 @@
+/* 개인정보처리방침 대제목 */
+.InfoHandlingPolicy_Content_subtitle {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 35px 0 0 0;
+}
+
+/* 대제목 하위 내용 */
+.InfoHandlingPolicy_Content_content {
+    background-color: #F6F6F6;
+    padding: 30px;
+    margin: 20px 15px;
+    border: rgba(28, 28, 28, 0.199) 1px solid;
+}
+
+/* 제n조 */
+.InfoHandlingPolicy_Content_title {
+    font-weight: bold;
+}
+
+.InfoHandlingPolicy_content_div_div {
+    margin-bottom: 20px;
+}
+
+/* 제 1조 대표항목 */
+.InfoHandlingPolicy_content_index {
+    display: grid;
+    border-top: 3px solid #C9EDFA;
+    border-left: rgba(28, 28, 28, 0.199) 1px solid;
+    grid-template-columns: 1fr 4fr 2fr;
+}
+
+.InfoHandlingPolicy_content_index span {
+    border-right: rgba(28, 28, 28, 0.199) 1px solid;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+    background-color: #ceeff250;
+    font-weight: bold;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 제1조 내용 div */
+.InfoHandlingPolicy_content_content {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    border-left: rgba(28, 28, 28, 0.199) 1px solid;
+}
+
+/* 교통안내 내용 */
+.InfoHandlingPolicy_content_content span {
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-right: rgba(28, 28, 28, 0.199) 1px solid;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+}

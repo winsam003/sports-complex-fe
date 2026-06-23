@@ -1,0 +1,17 @@
+.NiceAthentication_box {
+    background-color: plum;
+    padding-top: 20px;
+    border: 2px solid lightgray;
+}
+.NiceAthentication_title {
+    font-size: 1.5rem;
+    padding: 20px;
+}
+.NiceAthentication_call{
+    font-size: large;
+    font-weight: 600;
+}
+
+.NiceAthentication_button{
+    cursor: pointer;
+}

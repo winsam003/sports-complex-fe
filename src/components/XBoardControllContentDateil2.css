@@ -1,0 +1,149 @@
+.XBoardControllContentDateil2_uploadedfile{
+    font-size: small;
+    margin: 0;
+}
+
+.XBoardControllContentDateil2_modifiedContents{
+    width: 100%;
+    height: 30rem;
+
+    resize: none;
+}
+
+.XBoardControllContentDateil2_modityBtnBox {
+
+    margin-bottom: 3rem;
+}
+
+.XBoardControllContentDateil2_modityBtn {
+    width: 100px;
+    height: 50px;
+    margin-right: 30px;
+    font-size: large;
+    background-color: #D1EEF1;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+
+.XBoardControllContentDateil2_div {
+    width: 100%;
+    height: 100%;
+
+}
+
+.XBoardControllContentDateil2Containor {
+    width: 100%;
+
+    display: block;
+    align-items: center;
+    padding: 4rem;
+}
+
+.XBoardControllContentDateil2_title {
+    font-size: 2.5rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.XBoardControllContentDateil2_title>* {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.EventDetail_icon {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.XBoardControllContentDetail2_title2{
+    padding-left: 1rem;
+}
+
+.XBoardControllContentDateil2_selectedFile{
+    display: block;
+    padding-left: 1rem;
+    padding-top: .5rem;
+}
+
+/* 아래 정보 */
+.XBoardControllContentDateil2_menu {
+    display: flex;
+    /* justify-content: center; */
+    /* margin-top: 2rem; */
+    border-bottom: 1px solid #ccc;
+
+}
+
+.XBoardControllContentDateil2_menu>* {
+    margin: 0;
+    height: 4rem;
+    /* display: flex; */
+    /* justify-content: flex-start;
+    align-items: center; */
+    /* padding: 1rem; */
+    /* width: ; */
+}
+
+.XBoardControllContentDateil2_menu>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 1rem; */
+}
+
+.XBoardControllContentDateil2_menu>:first-child {
+    width: 150px;
+    /* flex: 2; */
+    font-weight: bold;
+
+    border-right: 1px solid #ccc;
+    background-color: rgb(209, 238, 241);
+}
+
+/* 오른쪽 정보 */
+.XBoardControllContentDateil2_twin {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+/* 버튼 */
+.XBoardControllContentDateil2_buttonBox {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 7rem;
+}
+
+
+.XBoardControllContentDateil2_button {
+    width: 100px;
+    height: 50px;
+    margin-right: 30px;
+    font-size: large;
+    background-color: #D1EEF1;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+.XBoardControllContentDateil2_file {
+    color: blue;
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+
+.XBoardControllContentDateil2_contents {
+    margin-top: 5rem;
+}
+
+@media(max-width: 1200px) {
+    .XBoardControllContentDateil2Containor {
+        width: 100%;
+        height: 100vh;
+    }
+}

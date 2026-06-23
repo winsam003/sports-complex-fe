@@ -1,0 +1,18 @@
+.HistoryClass_Index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr repeat(5, 1fr);
+    margin-top: 30px;
+    border-top: 3px solid #C9EDFA !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    background-color: #ceeff250 !important;
+    text-align: center;
+}
+
+.HistoryClass_Index p {
+    font-weight: bold;
+}
+
+.HistoryClass_content {
+    border: none !important;
+}

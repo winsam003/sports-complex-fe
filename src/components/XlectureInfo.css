@@ -1,0 +1,26 @@
+.XlectureInfo_Box {
+    display: flex;
+}
+
+.XlectureInfo {
+    flex-grow: 1;
+}
+
+.XlectureInfoList_Index {
+    display: grid;
+    grid-template-columns: 50px repeat(4, 1fr) repeat(3, 2fr);
+    text-align: center;
+    border-top: 3px solid #C9EDFA;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #ceeff250;
+}
+
+.XlectureInfoList_Index span {
+    font-weight: bold;
+}
+
+/* 강사 상세페이지 버튼 */
+.JoinLecture_submitButton {
+    margin-top: 15px;
+}

@@ -1,0 +1,138 @@
+.ApplicationDetails_box {
+    display: flex;
+    /* background-color: lightgreen; */
+}
+
+.ApplicationDetails_Content {
+    background-color: #F6F6F6;
+    width: 100%;
+    padding: 20px;
+}
+
+.ApplicationDetails_info>h1 {
+    margin: 0;
+}
+
+.ApplicationDetails_info>h1::before {
+    content: "\1F4CC";
+}
+
+.ApplicationDetails_info ul {
+    padding-left: 30px;
+}
+
+.ApplicationDetails_info li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.ApplicationDetails_info li:nth-child(1)::before,
+.ApplicationDetails_info li:nth-child(2)::before {
+    content: "\2714";
+}
+
+
+
+/* 내역 관련 */
+#ApplicationDetails_classHistory {
+    display: block;
+}
+
+
+/* 탭 효과 */
+.ApplicationDetails_tabMenu ul {
+    list-style: none;
+    /* background-color: antiquewhite; */
+}
+
+.ApplicationDetails_tabMenu a {
+    text-decoration: none;
+}
+
+.ApplicationDetails_Menubox {
+    padding: 15px;
+    /* letter-spacing: -0.5px; */
+}
+
+.ApplicationDetails_tabMenu {
+    position: relative;
+}
+
+.ApplicationDetails_tabMenu .ApplicationDetails_list {
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.ApplicationDetails_list li {
+    float: left;
+    margin-right: 10px;
+}
+
+.ApplicationDetails_tabBtn {
+    background-color: lightblue;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+
+    cursor: pointer;
+}
+
+li.ApplicationDetails_ison .ApplicationDetails_tabBtn {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(141, 158, 158);
+}
+
+
+/* 아래 박스 */
+.ApplicationDetails_showHistory {
+    margin-top: 40px;
+}
+
+.ApplicationDetails_showHistory span {
+    display: inline-block;
+    align-items: center;
+
+}
+
+/* grid 표 내용물 공통 사항 >>index<< */
+.ApplicationDetails_showHistory>div>div:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid black;
+    background-color: #E8E3F1;
+}
+
+.ApplicationDetails_showHistory>div>div span {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    line-height: 50px;
+}
+.ApplicationDetails_showHistory>div>div span:last-child{
+    border-right: 1px solid black;
+
+}
+
+/* grid 표 내용물 공통 사항 >>content<< */
+.ApplicationDetails_showHistory>div>div {
+    text-align: center;
+}
+
+@media(max-width : 1200px) {
+    .ApplicationDetails_showHistory>div {
+        overflow: auto;
+        width: 100%;
+    }
+
+    .ApplicationDetails_showHistory>div>div:nth-child(1) {
+        /* position: initial; */
+        width: 950px;
+    }
+
+    .ApplicationDetails_showHistory>div>div:nth-child(2) {
+        /* position: initial; */
+        width: 950px;
+    }
+
+}

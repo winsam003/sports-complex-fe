@@ -1,0 +1,125 @@
+.XmainEvent_box {
+    display: flex;
+}
+.XmainEvent_main {
+    width: 100%;
+    /* background-color: #ffffff; */
+}
+/* main div 안에 있는 타이틀 */
+.XmainEvent_listTitle{
+    /* background-color: lightcoral; */
+    margin: 1rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/* 광고사진 등록 버튼 */
+.XmainEvent_upload{
+    /* background-color: wheat; */
+    text-align: right;
+    padding: 1rem;
+    border-bottom: 1px solid #27979d;
+}
+.XmainEvent_upload>input:nth-child(2) {
+    
+    height: 3rem;
+    width: 6rem;
+    
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    
+    cursor: pointer;
+
+}
+
+
+/* 광고사진 등록 타이틀 */
+.XmainEvent_upload span{
+    display: inline-block;
+    font-size: large;
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(182, 218, 182);
+}
+/* 삭제 버튼 div */
+.XmainEvent_delete{
+    width: 100%;
+    /* background-color: wheat; */
+    text-align: right;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #838f4d;
+}
+/* 삭제 버튼 버튼 */
+.XmainEvent_delete>button{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    height: 3rem;
+    width: 6rem;
+    
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    
+    cursor: pointer;
+    
+}
+
+/* 광고 배너 이미지 */
+.XmainEvent_adPics{
+    /* margin-top: 1rem; */
+    width: 100%;
+    text-align: center;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+}
+.XmainEvent_adPics>div:not(:nth-child(5n)){
+    border-right: 1px solid #ccc;
+}
+.XmainEvent_adPics>div>p{
+    /* display: inline-block; */
+    margin: 0;
+    padding: 1rem;
+    background-color: aliceblue;
+    border-top: 3px solid #C9EDFA;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+
+}
+.XmainEvent_adPics>div{
+    display: inline-block;
+    width: 20%;
+    /* vertical-align: top; */
+    /* object-fit: contain; */
+    box-sizing: border-box;
+}
+.XmainEvent_adPics>div:hover p{
+    background-color: #dadcdd;
+}
+
+.XmainEvent_adPics img{
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+    
+    
+}
+
+@media(max-width: 1200px){
+    .XmainEvent_adPics div{
+        width: 30%;
+    }
+    .XmainEvent_adPics>div{
+    border-right: 1px solid #ccc;
+    }
+    .XmainEvent_adPics>div:nth-child(3),
+    .XmainEvent_adPics>div:nth-child(6),
+    .XmainEvent_adPics>div:nth-child(9),
+    .XmainEvent_adPics>div:nth-child(10){
+        border: none;
+    }
+}

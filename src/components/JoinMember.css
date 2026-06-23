@@ -1,0 +1,184 @@
+.JoinMember_joinbox {
+    height: auto;
+    background-color: ivory;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.JoinMember_midbox {
+    width: 80%;
+    height: 100%;
+}
+
+.JoinMember_midbox>div,
+.JoinMember_midbox>p {
+    text-align: center;
+}
+
+.JoinMember_title {
+    font-size: 2rem;
+    padding-top: 40px;
+}
+
+.JoinMember_midbox table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.JoinMember_midbox th {
+    background-color: lightcyan;
+    border: 2px solid lightskyblue;
+    width: 200px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.JoinMember_midbox td {
+    border: 2px solid lightskyblue;
+}
+
+.JoinMember_midbox input,
+.JoinMember_midbox select {
+    margin: 10px;
+}
+
+.JoinMember_midbox input[type="text"],
+.JoinMember_midbox input[type="password"],
+.JoinMember_midbox input[type="number"],
+.JoinMember_midbox input[type="email"] {
+    height: 50px;
+    border: 1px solid gray;
+}
+
+.JoinMember_midbox #name,
+.JoinMember_midbox #birth,
+.JoinMember_midbox #id,
+.JoinMember_midbox #password,
+.JoinMember_midbox #password2,
+.JoinMember_midbox #address1,
+.JoinMember_midbox #address2,
+.JoinMember_midbox #carNum {
+    width: 440px;
+}
+
+.JoinMember_midbox #email,
+.JoinMember_midbox #emailAdd,
+.JoinMember_midbox #emailAddSelect {
+    height: 50px;
+    width: 200PX;
+}
+
+.JoinMember_midbox #firstPhoneNum,
+.JoinMember_midbox #secondPhoneNum,
+.JoinMember_midbox #lastPhoneNum {
+    height: 50px;
+    width: 100px;
+}
+
+.JoinMember_submitBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.JoinMember_submitBox * {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(88, 143, 175);
+    color: white;
+    font-size: large;
+    border: none;
+    margin: 30px;
+
+    cursor: pointer;
+}
+
+.JoinMember_star {
+    color: red;
+}
+
+.JoinMember_midbox>span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.JoinMember_midbox td>a {
+    display: inline-block;
+    background-color: gray;
+    height: 50px;
+    width: 130px;
+    vertical-align: middle;
+    line-height: 50px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+}
+
+.JoinMember_midbox td>p {
+    margin: 10px;
+}
+
+
+/* 멤버코드 display: none */
+.JoinMember_code {
+    /* display: none; */
+}
+
+/* 전화번호 합친 input display: none */
+.fullPhoneNumber {
+    /* display: none; */
+}
+
+/* email 합친 input display: none */
+.femail {
+    /* display: none; */
+}
+
+.duplication{
+    width: 100px;
+    margin: 10px 10px;
+    height: 50px;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+.JoinMember_findAddress{
+    width: 100px;
+    margin: 10px 10px;
+    height: 50px;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+.Message{
+    margin-left: 1rem;
+    color: red;
+    font-size: smaller;
+}
+
+@media(max-width: 1200px) {
+
+    .JoinMember_midbox #name,
+    .JoinMember_midbox #birth,
+    .JoinMember_midbox #id,
+    .JoinMember_midbox #password,
+    .JoinMember_midbox #password2,
+    .JoinMember_midbox #address1,
+    .JoinMember_midbox #address2,
+    .JoinMember_midbox #carNum {
+        width: 80%;
+    }
+}

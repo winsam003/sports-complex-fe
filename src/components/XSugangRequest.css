@@ -1,0 +1,81 @@
+.XSugangRequest_div {
+    display: flex;
+}
+
+.XSugangRequest_div_div {
+    flex-grow: 1;
+}
+
+/* 대표항목 */
+.XSugangRequest_index {
+    display: grid;
+    grid-template-columns: 50px 100px 1fr repeat(2, 100px) 1fr repeat(3, 100px);
+    margin-top: 30px;
+    border-top: 3px solid #C9EDFA;
+    background-color: #ceeff250;
+    text-align: center;
+}
+
+.XSugangRequest_index p {
+    justify-content: center;
+    align-items: center;
+    word-break: keep-all;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+/* 페이지네이션 ul */
+.pagenationBox ul {
+    justify-content: center;
+    margin-top: 15px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+/* 페이지네이션 li */
+.pagination li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.pagination li:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.pagination li:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.pagination li a {
+    text-decoration: none;
+    color: #C9EDFA;
+    font-size: 1rem;
+}
+
+/* 활성화 된 페이지 */
+.pagination li.active a {
+    color: #337ab7;
+}
+
+.pagination li.active {
+    background-color: #ceeff250;
+}
+
+.pagination li a:hover,
+.pagination li a.active {
+    color: #337ab7;
+}
+
+@media (max-width:1200px) {
+    .XSugangRequest_div {
+        display: inherit;
+    }
+}

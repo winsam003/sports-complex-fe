@@ -1,0 +1,102 @@
+.XEventBoardWriteContent_div {
+    display: flex;
+}
+
+.XEventBoardWriteContent_div_div {
+    flex-grow: 1;
+}
+
+/* 필수항목 */
+.XEventBoardContent_haveto * {
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.XEventBoardContent_haveto,
+.star {
+    color: red;
+}
+
+/* 게시글 양식 */
+.XEventBoardContent_form table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* 게시글 input box */
+.XEventBoardContent_form input {
+    height: 40px;
+}
+
+.XEventBoardContent_form input[type="text"],
+.XEventBoardContent_form input[type="password"] {
+    width: 95%;
+}
+
+/* 게시글 항목 */
+.XEventBoardContent_form th {
+    border: 1px solid lightslategray;
+    width: 25%;
+    height: 50px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+/* 게시글 내용 */
+.XEventBoardContent_form td {
+    border: 1px solid lightslategray;
+    padding: 5px;
+    height: 100%;
+    width: max-content;
+}
+
+.XEventBoardContent_form td * {
+    vertical-align: middle;
+}
+
+/* 공지사항 종류 */
+.XEventBoardContent_form label {
+    margin-right: 20px;
+}
+
+/* 게시글 내용 작성box */
+.XEventBoardContent_form #content {
+    /* textarea로 수정함. */
+    height: 300px;
+    width: 95%;
+    resize: none;
+    white-space:pre;
+}
+/* 사진 */
+.XEventBoardContent_upload input {
+    display: block;
+}
+.XEventBoardContent_upload img {
+    width: 200px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* 게시판 등록, 목록 버튼 */
+.XEventBoardContent_btn_div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.XEventBoardContent_btn_div>button:nth-child(1){
+    background-color: darkcyan;
+    color: white;
+}
+.XEventBoardContent_btn_div button {
+    width: 100px;
+    height: 50px;
+    margin-right: 30px;
+    font-size: large;
+    background-color: #a5a6a7;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+}

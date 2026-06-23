@@ -1,0 +1,27 @@
+.XReantalPlaceNewone {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 30px;
+    border-top: 3px solid #C9EDFA;
+}
+
+/* 대표항목 */
+.XReantalPlaceNewone p {
+    margin: 0;
+    background-color: #ceeff250;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.XReantalPlaceNewone #placeType,
+.XReantalPlaceNewone input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 26px;
+}

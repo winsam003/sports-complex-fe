@@ -1,0 +1,38 @@
+.QRCodeDetail_Containor{
+    width: 100%;
+}
+
+.QRCodeDetail_Box {
+    width: 100%;
+    height: 40rem;
+
+    background-color: #F0FFFF;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.QRCodeDetail_QRCode {
+    width: 500px;
+    height: 50rem;
+
+    margin-top: calc((40rem / 2) - 250px);
+
+}
+
+.QRCodeDetail_message{
+    background-color: #F0FFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* height: 5rem; */
+
+    color: red;
+}
+
+.QRCodeDetail_QRCodeL{
+    cursor: pointer;
+}

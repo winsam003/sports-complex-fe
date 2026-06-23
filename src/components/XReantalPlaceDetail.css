@@ -1,0 +1,7 @@
+.XReantalPlaceDetail_div {
+    display: flex;
+}
+
+.XReantalPlaceDetail_div_div {
+    flex-grow: 1;
+}

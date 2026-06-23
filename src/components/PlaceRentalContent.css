@@ -1,0 +1,112 @@
+.PlaceRentalContent_infoTitle1{
+    margin-top: 1rem;
+}
+.PlaceRentalContent_infoTitle2{
+    margin-top: 1rem;
+}
+
+.PlaceRentalContent_infoTitle{
+    font-weight: bold;
+    font-size: larger;
+}
+.PlaceRentalContent_infoTitleBox{
+    padding-left: 2rem;
+    background-color: #F0F8FF;
+}
+
+
+/* 고르는 버튼 */
+.PlaceRentalContent_select {
+    background-color: #C9EDFA;
+    text-align: center;
+    width: 100%;
+}
+
+.PlaceRentalContent_select * {
+    margin: 1rem;
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+
+/* 조회, 초기화 버튼  */
+.RentalSearchButton button {
+    width: 100px;
+    height: 50px;
+    margin: 10px 30px;
+    font-size: large;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+/* form */
+.PlaceRentalContent_formSet {
+    border-top: 3px solid #C9EDFA;
+}
+
+.PlaceRentalContent_formSet table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.PlaceRentalContent_formSet th {
+    border-left: rgba(28, 28, 28, 0.199) 1px solid;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+    border-right: rgba(28, 28, 28, 0.199) 1px solid;
+    width: 30%;
+    height: 30px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+.PlaceRentalContent_formSet td {
+    border-left: rgba(28, 28, 28, 0.199) 1px solid;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+    border-right: rgba(28, 28, 28, 0.199) 1px solid;
+    padding: 5px;
+    height: 100%;
+    width: max-content;
+}
+
+.PlaceRentalContent_formSet td * {
+    vertical-align: middle;
+}
+
+.PlaceRentalContent_formSet input {
+    height: 30px;
+
+}
+.PlaceRentalContent_form{
+    height: 40px;
+}
+
+.PlaceRentalContent_formSet #name {
+    width: 95%;
+}
+
+.PlaceRentalContent_formSet input[type="text"] {
+    width: 98%;
+}
+
+/* 글쓰기 버튼 */
+.RentalWriteButton button {
+    width: 100px;
+    height: 50px;
+    margin: 10px 30px;
+    font-size: large;
+    background-color: #059da5;
+    color: white;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width : 750px) {
+    .PlaceRentalContent_select span {
+        width: 50%;
+        margin-left: 0;
+    }
+}

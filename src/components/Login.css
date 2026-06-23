@@ -1,0 +1,130 @@
+.login_Page {
+    background-color: #cdf3f3;
+    height: 500px;
+    display: flex;
+    /* align-items: center;/ */
+    justify-content: space-evenly;
+    padding-top: 250px;
+}
+
+.loginManagement_Page {
+    background-color: #f3eaec;
+    height: 500px;
+    display: flex;
+    /* align-items: center;/ */
+    justify-content: space-evenly;
+    padding-top: 250px;
+}
+
+.login_instructions {
+    height: 60px;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.login_logo {
+    width: 13rem;
+    height: 10rem;
+    background-image: url("../../public/img/logo.png");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 3rem;
+}
+
+.login_Box>div {
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.login_Box div input {
+    height: 50px;
+    vertical-align: middle;
+
+}
+
+.login_submitAndReset {
+    display: flex;
+}
+
+.login_submitAndReset>:nth-child(2) {
+    flex: 8;
+    background-color: #27979d;
+    border: none;
+    border-radius: 1em;
+    color: white;
+    font-size: 110%;
+    text-align: center;
+
+    cursor: pointer;
+
+}
+
+.login_submitAndReset>:nth-child(3) {
+    flex: 2;
+    background-color: #afd1d3;
+    border: none;
+    border-radius: 1em;
+    font-size: 110%;
+    color: white;
+
+    cursor: pointer;
+}
+
+.login_joinandfind a {
+    display: inline-block;
+    text-align: center;
+    width: 29%;
+
+}
+
+.login_joinandfind a:nth-child(2),
+.login_joinandfind a:nth-child(3) {
+    width: 35%;
+}
+
+.login_joinandfind a:not(:nth-child(3)) {
+    border-right: 1px solid lightslategray;
+}
+
+.login_Icon {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    padding-right: 1rem;
+}
+
+#login_iconnone {
+    color: #C9EDFA;
+}
+
+
+.login_managerLoginBox {
+    display: flex;
+    justify-content: center;
+}
+
+.login_managerLogin {
+    cursor: pointer;
+}
+
+@media(max-width: 850px){
+    .login_Page, 
+    .loginManagement_Page{
+        display: inherit;
+    }
+    .login_logo {
+        display: none;
+    }
+    .login_Box_div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loginManagement_Page,
+    .login_Page{
+        padding-top: 100px;
+    }
+    
+}

@@ -1,0 +1,83 @@
+/* 제목 감싸는 div */
+.BoardDetail_title {
+    display: flex;
+    align-items: center;
+    margin: 40px 0 0 0;
+    border-top: 3px solid #C9EDFA;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+/* 작성자, 등록일시, 조회수, 첨부파일 감싸는 div */
+.BoardDetail_title_content {
+    display: grid;
+    grid-template-columns: 70px 80px 70px 130px 70px 60px repeat(2, 1fr) 70px 130px;
+    padding-left: 5px;
+    border-bottom: rgba(28, 28, 28, 0.199) 1px solid;
+}
+
+.BoardDetail_title_content p {
+    margin: 6px 0;
+    color: rgba(28, 28, 28, 0.566);
+    font-size: 13px;
+}
+
+/* 작성자, 등록일시, 조회수, 첨부파일 세부항목 */
+.BoardDetail_title_content p:nth-of-type(2n+1) {
+    text-align: center;
+}
+
+/* 작성자, 등록일시, 조회수, 첨부파일 내용 */
+.BoardDetail_title_content p:nth-of-type(2n) {
+    text-align: center;
+    border-right: rgba(28, 28, 28, 0.199) 1px solid;
+}
+
+/* 첨부파일 */
+.BoardDetail_title_content p:nth-last-of-type(2) {
+    border: none;
+    grid-column: 9/10;
+}
+
+.BoardDetail_title_content p:nth-last-of-type(1) {
+    border: none;
+    grid-column: 10/11;
+}
+
+/* 게시글 내용 */
+.BoardDetail_content {
+    margin: 10px;
+    padding: 10px;
+}
+
+@media (max-width : 1200px) {
+
+    /* 작성자, 등록일시, 조회수, 첨부파일 감싸는 div */
+    .BoardDetail_title_content {
+        display: grid;
+        grid-template-columns: 70px 80px 70px 130px 70px 60px;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    /* 조회수 내용 */
+    .BoardDetail_title_content p:nth-last-of-type(3) {
+        border: none;
+    }
+
+    /* 첨부파일 */
+    .BoardDetail_title_content p:nth-last-of-type(2) {
+        border: none;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 5px;
+    }
+
+    .BoardDetail_title_content p:nth-last-of-type(1) {
+        border: none;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
